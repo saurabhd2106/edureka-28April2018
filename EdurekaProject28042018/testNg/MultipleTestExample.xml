@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Learning TestNG Suite">
+  <test name="Learning TestNG Test">
+    <classes>
+      <class name="day6.Testing1"/>
+    </classes>
+  </test> <!-- Learning TestNG Test -->
+  
+  <test name="Guru99 TestNG Test">
+    <classes>
+      <class name="day6.Guru99Project"/>
+    </classes>
+  </test>
+  
+</suite> <!-- Learning TestNG Suite -->

@@ -1,0 +1,9 @@
+
+
+	Shortcut:
+	
+	1. Alt + Shift + X, J --> Run as Java Command
+	
+	2. syso + ctrl + spacebar + Enter--> To write System.out.println();
+	
+	3. main + ctrl + spacebar + Enter --> To create main method

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Learning TestNG Suite]" parallel="tests">
+  <test name="Guru99 Project 3(failed)" parallel="tests">
+    <parameter name="password" value="mErejYm"/>
+    <parameter name="username" value="mngr132098"/>
+    <classes>
+      <class name="day6.Guru99Project">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="login" invocation-numbers="0"/>
+          <include name="invokeBrowser"/>
+        </methods>
+      </class> <!-- day6.Guru99Project -->
+    </classes>
+  </test> <!-- Guru99 Project 3(failed) -->
+  <test name="Guru99 Project 2(failed)" parallel="tests">
+    <parameter name="password" value="mErejYm"/>
+    <parameter name="username" value="mngr132098"/>
+    <classes>
+      <class name="day6.Guru99Project">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="login" invocation-numbers="0"/>
+          <include name="invokeBrowser"/>
+        </methods>
+      </class> <!-- day6.Guru99Project -->
+    </classes>
+  </test> <!-- Guru99 Project 2(failed) -->
+  <test name="Guru99 Project 1(failed)" parallel="tests">
+    <parameter name="password" value="mErejYm"/>
+    <parameter name="username" value="mngr132098"/>
+    <classes>
+      <class name="day6.Guru99Project">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="login" invocation-numbers="0"/>
+          <include name="invokeBrowser"/>
+        </methods>
+      </class> <!-- day6.Guru99Project -->
+    </classes>
+  </test> <!-- Guru99 Project 1(failed) -->
+</suite> <!-- Failed suite [Learning TestNG Suite] -->

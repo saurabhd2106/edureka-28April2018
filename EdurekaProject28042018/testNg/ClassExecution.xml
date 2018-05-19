@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Learning TestNG Suite">
+  <test name="Learning TestNG Test">
+      <groups>
+          <run>
+              <exclude name="Sanity"></exclude>
+          </run>
+      </groups>
+    <classes>
+      <class name="day6.Testing1"/>
+      <class name="day6.Guru99Project"/>
+    </classes>
+  </test> <!-- Learning TestNG Test -->
+</suite> <!-- Learning TestNG Suite -->

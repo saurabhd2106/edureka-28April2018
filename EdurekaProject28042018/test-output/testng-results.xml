@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="13108" started-at="2018-05-13T17:41:11Z" finished-at="2018-05-13T17:41:24Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="13108" started-at="2018-05-13T17:41:11Z" finished-at="2018-05-13T17:41:24Z">
+      <class name="day6.MercuryTravelTestcase">
+        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:day6.MercuryTravelTestcase@50c87b21]" name="invokeBrowser" is-config="true" duration-ms="10525" started-at="2018-05-13T23:11:11Z" finished-at="2018-05-13T23:11:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invokeBrowser -->
+        <test-method status="PASS" signature="verifyReturnDateIsNotVisibleInOneWayTrip()[pri:0, instance:day6.MercuryTravelTestcase@50c87b21]" name="verifyReturnDateIsNotVisibleInOneWayTrip" duration-ms="1156" started-at="2018-05-13T23:11:21Z" finished-at="2018-05-13T23:11:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyReturnDateIsNotVisibleInOneWayTrip -->
+        <test-method status="PASS" signature="verifyReturnDateIsVisibleInRoundTrip()[pri:0, instance:day6.MercuryTravelTestcase@50c87b21]" name="verifyReturnDateIsVisibleInRoundTrip" duration-ms="1391" started-at="2018-05-13T23:11:22Z" finished-at="2018-05-13T23:11:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyReturnDateIsVisibleInRoundTrip -->
+      </class> <!-- day6.MercuryTravelTestcase -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

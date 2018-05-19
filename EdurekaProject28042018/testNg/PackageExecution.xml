@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Learning TestNG Suite">
+  <test name="Learning TestNG Test">
+   <packages>
+       <package name="day6"></package>
+   </packages>
+  </test> <!-- Learning TestNG Test -->
+</suite> <!-- Learning TestNG Suite -->

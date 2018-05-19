@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Learning TestNG Suite" parallel="tests">
+  <test name="Guru99 Project 1">
+    <parameter name="username" value="mngr132098"></parameter>
+    <parameter name="password" value="mErejYm"></parameter>
+    <classes>
+      <class name="day6.Guru99Project"/>
+    </classes>
+  </test> <!-- Learning TestNG Test -->
+  
+  <!--  <test name="Guru99 Project 2">
+    <parameter name="username" value="mngr132098"></parameter>
+    <parameter name="password" value="mErejYm"></parameter>
+    <classes>
+      <class name="day6.Guru99Project"/>
+    </classes>
+  </test>
+   <test name="Guru99 Project 3">
+    <parameter name="username" value="mngr132098"></parameter>
+    <parameter name="password" value="mErejYm"></parameter>
+    <classes>
+      <class name="day6.Guru99Project"/>
+    </classes>
+  </test> -->
+</suite> <!-- Learning TestNG Suite -->
