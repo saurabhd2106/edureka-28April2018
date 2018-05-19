@@ -118,4 +118,9 @@ public class Guru99Project {
 		
 		driver.findElement(By.name("button2")).click();
 	}
+	
+	public void closeBrowser()
+	{
+		driver.quit();
+	}
 }

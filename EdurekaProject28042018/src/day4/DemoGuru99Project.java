@@ -16,6 +16,8 @@ public class DemoGuru99Project {
 		System.out.println("Customer Id :: "+ customerId);
 		
 		gg.addNewAccount(customerId, "Current");
+		
+		gg.closeBrowser();
 
 	}
 

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Learning TestNG Suite" parallel="tests">
-  <test name="Guru99 Project 1">
+  <test name="Testing on chrome">
+     <parameter name="browserType" value="chrome"></parameter>
     <parameter name="username" value="mngr132098"></parameter>
     <parameter name="password" value="mErejYm"></parameter>
     <classes>
@@ -9,18 +10,20 @@
     </classes>
   </test> <!-- Learning TestNG Test -->
   
-  <!--  <test name="Guru99 Project 2">
+   <test name="Testing on edge">
+      <parameter name="browserType" value="edge"></parameter>
     <parameter name="username" value="mngr132098"></parameter>
     <parameter name="password" value="mErejYm"></parameter>
     <classes>
       <class name="day6.Guru99Project"/>
     </classes>
   </test>
-   <test name="Guru99 Project 3">
+   <test name="Testing on firefox">
+       <parameter name="browserType" value="firefox"></parameter>
     <parameter name="username" value="mngr132098"></parameter>
     <parameter name="password" value="mErejYm"></parameter>
     <classes>
       <class name="day6.Guru99Project"/>
     </classes>
-  </test> -->
+  </test>
 </suite> <!-- Learning TestNG Suite -->

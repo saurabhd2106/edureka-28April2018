@@ -1,25 +1,186 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="2" ignored="0" total="3" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="13108" started-at="2018-05-13T17:41:11Z" finished-at="2018-05-13T17:41:24Z">
+  <suite name="Learning TestNG Suite" duration-ms="17732" started-at="2018-05-19T16:44:24Z" finished-at="2018-05-19T16:44:42Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="13108" started-at="2018-05-13T17:41:11Z" finished-at="2018-05-13T17:41:24Z">
-      <class name="day6.MercuryTravelTestcase">
-        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:day6.MercuryTravelTestcase@50c87b21]" name="invokeBrowser" is-config="true" duration-ms="10525" started-at="2018-05-13T23:11:11Z" finished-at="2018-05-13T23:11:21Z">
+    <test name="Testing on chrome" duration-ms="11845" started-at="2018-05-19T16:44:24Z" finished-at="2018-05-19T16:44:36Z">
+      <class name="day6.Guru99Project">
+        <test-method status="PASS" signature="invokeBrowser(java.lang.String)[pri:0, instance:day6.Guru99Project@56f4468b]" name="invokeBrowser" is-config="true" duration-ms="9216" started-at="2018-05-19T22:14:24Z" finished-at="2018-05-19T22:14:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invokeBrowser -->
-        <test-method status="PASS" signature="verifyReturnDateIsNotVisibleInOneWayTrip()[pri:0, instance:day6.MercuryTravelTestcase@50c87b21]" name="verifyReturnDateIsNotVisibleInOneWayTrip" duration-ms="1156" started-at="2018-05-13T23:11:21Z" finished-at="2018-05-13T23:11:22Z">
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:0, instance:day6.Guru99Project@56f4468b]" name="login" duration-ms="1754" started-at="2018-05-19T22:14:33Z" finished-at="2018-05-19T22:14:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mngr132098]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[mErejYm]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyReturnDateIsNotVisibleInOneWayTrip -->
-        <test-method status="PASS" signature="verifyReturnDateIsVisibleInRoundTrip()[pri:0, instance:day6.MercuryTravelTestcase@50c87b21]" name="verifyReturnDateIsVisibleInRoundTrip" duration-ms="1391" started-at="2018-05-13T23:11:22Z" finished-at="2018-05-13T23:11:24Z">
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:day6.Guru99Project@56f4468b]" name="closeBrowser" is-config="true" duration-ms="835" started-at="2018-05-19T22:14:35Z" finished-at="2018-05-19T22:14:36Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyReturnDateIsVisibleInRoundTrip -->
-      </class> <!-- day6.MercuryTravelTestcase -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- day6.Guru99Project -->
+    </test> <!-- Testing on chrome -->
+    <test name="Testing on edge" duration-ms="12400" started-at="2018-05-19T16:44:24Z" finished-at="2018-05-19T16:44:37Z">
+      <class name="day6.Guru99Project">
+        <test-method status="PASS" signature="invokeBrowser(java.lang.String)[pri:0, instance:day6.Guru99Project@1b604f19]" name="invokeBrowser" is-config="true" duration-ms="5244" started-at="2018-05-19T22:14:24Z" finished-at="2018-05-19T22:14:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invokeBrowser -->
+        <test-method status="FAIL" signature="login(java.lang.String, java.lang.String)[pri:0, instance:day6.Guru99Project@1b604f19]" name="login" duration-ms="280" started-at="2018-05-19T22:14:29Z" finished-at="2018-05-19T22:14:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mngr132098]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[mErejYm]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Guru99 Bank Manager HomePage] but found [Guru99 Bank Home Page]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Guru99 Bank Manager HomePage] but found [Guru99 Bank Home Page]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:189)
+	at org.testng.Assert.assertEquals(Assert.java:199)
+	at day6.Guru99Project.login(Guru99Project.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:day6.Guru99Project@1b604f19]" name="closeBrowser" is-config="true" duration-ms="6806" started-at="2018-05-19T22:14:30Z" finished-at="2018-05-19T22:14:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- day6.Guru99Project -->
+    </test> <!-- Testing on edge -->
+    <test name="Testing on firefox" duration-ms="17732" started-at="2018-05-19T16:44:24Z" finished-at="2018-05-19T16:44:42Z">
+      <class name="day6.Guru99Project">
+        <test-method status="PASS" signature="invokeBrowser(java.lang.String)[pri:0, instance:day6.Guru99Project@4678c730]" name="invokeBrowser" is-config="true" duration-ms="14123" started-at="2018-05-19T22:14:24Z" finished-at="2018-05-19T22:14:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invokeBrowser -->
+        <test-method status="FAIL" signature="login(java.lang.String, java.lang.String)[pri:0, instance:day6.Guru99Project@4678c730]" name="login" duration-ms="1780" started-at="2018-05-19T22:14:38Z" finished-at="2018-05-19T22:14:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[mngr132098]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[mErejYm]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Guru99 Bank Manager HomePage] but found []]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Guru99 Bank Manager HomePage] but found []
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:189)
+	at org.testng.Assert.assertEquals(Assert.java:199)
+	at day6.Guru99Project.login(Guru99Project.java:61)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
+	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:day6.Guru99Project@4678c730]" name="closeBrowser" is-config="true" duration-ms="1790" started-at="2018-05-19T22:14:40Z" finished-at="2018-05-19T22:14:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- day6.Guru99Project -->
+    </test> <!-- Testing on firefox -->
+  </suite> <!-- Learning TestNG Suite -->
 </testng-results>
