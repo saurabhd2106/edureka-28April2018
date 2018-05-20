@@ -14,7 +14,7 @@ public class ExceptionalHandling {
 			arr[3] = 18;
 			arr[4] = 11;
 			
-			for(int i=0; i<=5; i++){
+			for(int i=0; i<5; i++){
 				System.out.println(arr[i]);
 			}
 			
@@ -24,6 +24,8 @@ public class ExceptionalHandling {
 			System.out.println("An Exception occured in string...");
 		} catch (Exception e) {
 			System.out.println("Some other error..");
+		} finally {
+			System.out.println("I always execute..");
 		}
 		
 	}

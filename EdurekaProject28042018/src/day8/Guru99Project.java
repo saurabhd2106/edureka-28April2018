@@ -1,4 +1,4 @@
-package day4;
+package day8;
 
 import java.util.concurrent.TimeUnit;
 
@@ -14,7 +14,7 @@ public class Guru99Project {
 	WebDriver driver;
 	String url = "http://demo.guru99.com/v4";
 	
-	public void invokeBrowser(String browserType){
+	public void invokeBrowser(String browserType) throws Exception{
 		
 		if(browserType.equals("chrome")){
 			
@@ -35,7 +35,9 @@ public class Guru99Project {
 						"C:\\Users\\Saurabh Dhingra\\workspace\\libs\\geckodriver-v0.20.1-win64\\geckodriver.exe");
 				driver = new FirefoxDriver();
 				
-			} 
+			} else {
+				throw new Exception("Invalid Browser Type");
+			}
 		
 		driver.manage().window().maximize();
 		
