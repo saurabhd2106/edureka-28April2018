@@ -1,0 +1,34 @@
+
+http://www.seleniumeasy.com/selenium-tutorials/css-selectors-tutorial-for-selenium-with-examples
+
+	CSS Selector:
+	
+	Basic Syntax:
+	- htmltag[attribute='value']
+	
+	- htmltag[attribute='value'][attribute2='value2']
+	
+	
+	Using class in css
+	
+	.(dot) operator is used in classes
+	
+	.small.cbx.btn.btn-s.btn-ter.tab.tgl_button.center_b
+	
+	Using Id:
+	
+	# (hash) operator is used
+	
+	#ListViewInner -- example using Id
+	
+	
+	^ (power symbol) -- its like starts with
+	-- starting of the string
+	
+	$ (dolar symbol) -- its like ends with
+	-- matches ending text
+	
+	* (astrick) -- its like contains method
+	-- matches some part of the string
+	
+	

@@ -10,6 +10,8 @@ public class ArrayExample {
 		//Dynamic way of creating an array
 		int[] arr = new int[10];
 		
+		int iArray[] = new int[5];
+		
 		arr[0] = 89;
 		arr[1] = 98;
 		
