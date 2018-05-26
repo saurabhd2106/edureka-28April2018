@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 
 import commonLibs.implementation.AlertHandling;
 import commonLibs.implementation.Driver;
+import commonLibs.implementation.TakeScreenshot;
 
 public class DemoCommonDriver {
 
@@ -22,9 +23,10 @@ public class DemoCommonDriver {
 			
 			WebDriver driver = cmnDriver.getDriver();
 			
-			AlertHandling alert = new AlertHandling(driver);
+			TakeScreenshot camera = new TakeScreenshot(driver);
 			
-			alert.acceptAlert();
+			camera.captureAndSaveScreenshot("C:\\Users\\Saurabh Dhingra\\workspace_git\\EdurekaFramework28April2018\\screenshots\\Test.png");
+			
 			
 			System.out.println(title);
 			
