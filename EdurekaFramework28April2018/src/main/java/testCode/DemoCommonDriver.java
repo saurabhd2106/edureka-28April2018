@@ -2,7 +2,6 @@ package testCode;
 
 import org.openqa.selenium.WebDriver;
 
-import commonLibs.implementation.AlertHandling;
 import commonLibs.implementation.Driver;
 import commonLibs.implementation.TakeScreenshot;
 

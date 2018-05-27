@@ -11,7 +11,7 @@ public class BasicOperations {
 	public TextboxControls textboxControl;
 	public MouseOperations mouseControl;
 	public WebDriver driver;
-	
+
 	public BasicOperations(WebDriver driver) {
 		elementControl = new ElementHandling();
 		textboxControl = new TextboxControls();

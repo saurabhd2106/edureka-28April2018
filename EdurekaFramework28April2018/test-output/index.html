@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-mercuryTravelFunctionTests">
-              <span class="suite-name border-passed">mercuryTravelFunctionTests</span>
+              <span class="suite-name border-failed">mercuryTravelFunctionTests</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-mercuryTravelFunctionTests" class="hide-methods failed suite-mercuryTravelFunctionTests"> (hide)</a> <!-- hide-methods failed suite-mercuryTravelFunctionTests -->
+                      <a href="#" panel-name="suite-mercuryTravelFunctionTests" class="show-methods failed suite-mercuryTravelFunctionTests"> (show)</a> <!-- show-methods failed suite-mercuryTravelFunctionTests -->
+                    </span>
+                    <div class="method-list-content failed suite-mercuryTravelFunctionTests">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-mercuryTravelFunctionTests" title="com.mercuryTravel.testcases.MercuryTravelHomePagesTests" hash-for-method="verifyUserLoginWithMultipleCredentials(saurabh.d2106@gmail.com, Pro@12428349)">verifyUserLoginWithMultipleCredentials(saurabh.d2106@gmail.com, Pro@12428349)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-mercuryTravelFunctionTests -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,7 +116,7 @@
                     <div class="method-list-content passed suite-mercuryTravelFunctionTests">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-mercuryTravelFunctionTests" title="com.mercuryTravel.testcases.MercuryTravelHomePagesTests" hash-for-method="verifyUserLoginWithCorrectCredentials">verifyUserLoginWithCorrectCredentials</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-mercuryTravelFunctionTests" title="com.mercuryTravel.testcases.MercuryTravelHomePagesTests" hash-for-method="verifyUserLoginWithMultipleCredentials(saurabh.d2106@gmail.com, Pro@1234)">verifyUserLoginWithMultipleCredentials(saurabh.d2106@gmail.com, Pro@1234)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-mercuryTravelFunctionTests -->
@@ -117,6 +131,26 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-mercuryTravelFunctionTests" class="panel mercuryTravelFunctionTests">
+          <div class="suite-mercuryTravelFunctionTests-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.mercuryTravel.testcases.MercuryTravelHomePagesTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyUserLoginWithMultipleCredentials(saurabh.d2106@gmail.com, Pro@12428349)">
+                  </a> <!-- verifyUserLoginWithMultipleCredentials(saurabh.d2106@gmail.com, Pro@12428349) -->
+                  <span class="method-name">verifyUserLoginWithMultipleCredentials</span>
+                  <span class="parameters">(saurabh.d2106@gmail.com, Pro@12428349)</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at com.mercuryTravel.testcases.MercuryTravelHomePagesTests.verifyUserLoginWithMultipleCredentials(MercuryTravelHomePagesTests.java:47)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-mercuryTravelFunctionTests-class-failed -->
           <div class="suite-mercuryTravelFunctionTests-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -125,9 +159,10 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyUserLoginWithCorrectCredentials">
-                  </a> <!-- verifyUserLoginWithCorrectCredentials -->
-                  <span class="method-name">verifyUserLoginWithCorrectCredentials</span>
+                  <a name="verifyUserLoginWithMultipleCredentials(saurabh.d2106@gmail.com, Pro@1234)">
+                  </a> <!-- verifyUserLoginWithMultipleCredentials(saurabh.d2106@gmail.com, Pro@1234) -->
+                  <span class="method-name">verifyUserLoginWithMultipleCredentials</span>
+                  <span class="parameters">(saurabh.d2106@gmail.com, Pro@1234)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -184,16 +219,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyUserLoginWithCorrectCredentials')
+data.setCell(0, 1, 'verifyUserLoginWithMultipleCredentials')
 data.setCell(0, 2, 'com.mercuryTravel.testcases.MercuryTravelHomePagesTests')
-data.setCell(0, 3, 2337);
+data.setCell(0, 3, 10118);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyUserLoginWithMultipleCredentials')
+data.setCell(1, 2, 'com.mercuryTravel.testcases.MercuryTravelHomePagesTests')
+data.setCell(1, 3, 1947);
 window.suiteTableData['mercuryTravelFunctionTests']= { tableData: data, tableDiv: 'times-div-mercuryTravelFunctionTests'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 seconds</span>
+              <span class="suite-total-time">Total running time: 12 seconds</span>
               <div id="times-div-mercuryTravelFunctionTests">
               </div> <!-- times-div-mercuryTravelFunctionTests -->
             </div> <!-- times-div -->
@@ -208,9 +247,16 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-mercuryTravelFunctionTests" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">1 ignored method</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.mercuryTravel.testcases.MercuryTravelHomePagesTests</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">verifyUserLoginWithCorrectCredentials</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-mercuryTravelFunctionTests" class="panel">
@@ -220,18 +266,42 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">com.mercuryTravel.testcases.MercuryTravelHomePagesTests</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">initialization</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">invokeBrowser</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">516 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">verifyUserLoginWithCorrectCredentials</span>
-                <span class="method-start">11669 ms</span>
+                <span class="method-name">verifyUserLoginWithMultipleCredentials(saurabh.d2106@gmail.com, Pro@1234)</span>
+                <span class="method-start">11876 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterAMethod([TestResult name=verifyUserLoginWithMultipleCredentials status=SUCCESS method=MercuryTravelHomePages...)</span>
+                <span class="method-start">13825 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyUserLoginWithMultipleCredentials(saurabh.d2106@gmail.com, Pro@12428349)</span>
+                <span class="method-start">13827 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">afterAMethod([TestResult name=verifyUserLoginWithMultipleCredentials status=FAILURE method=MercuryTravelHomePages...)</span>
+                <span class="method-start">23950 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">14011 ms</span>
+                <span class="method-start">23963 ms</span>
               </div> <!-- configuration-class after -->
+              <div class="configuration-suite after">
+                <span class="method-name">cleanup</span>
+                <span class="method-start">24864 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
