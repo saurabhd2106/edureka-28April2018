@@ -37,7 +37,7 @@ public class TakeScreenshot implements IScreenshots{
 		
 		FileUtils.moveFile(tmpFile, imgFile);
 		
-		return null;
+		return imgFile.getAbsolutePath();
 	}
 
 }

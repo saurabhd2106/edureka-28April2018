@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [mercuryTravelFunctionTests]">
+  <test name="hompage(failed)">
     <classes>
       <class name="com.mercuryTravel.testcases.MercuryTravelHomePagesTests">
         <methods>
-          <include name="verifyUserLoginWithCorrectCredentials"/>
           <include name="initialization"/>
           <include name="invokeBrowser"/>
+          <include name="verifyUserLoginWithMultipleCredentials" invocation-numbers="1"/>
           <include name="cleanup"/>
           <include name="closeBrowser"/>
           <include name="afterAMethod"/>
         </methods>
       </class> <!-- com.mercuryTravel.testcases.MercuryTravelHomePagesTests -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- hompage(failed) -->
+</suite> <!-- Failed suite [mercuryTravelFunctionTests] -->
