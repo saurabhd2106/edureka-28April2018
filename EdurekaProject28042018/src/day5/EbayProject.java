@@ -18,9 +18,9 @@ public class EbayProject {
 	public void invokeBrowser(){
 		
 		
-		System.setProperty("webdriver.chrome.driver",
+		/*System.setProperty("webdriver.chrome.driver",
 				"C:\\Users\\Saurabh Dhingra\\workspace\\libs\\chromeDriver36\\chromedriver.exe");
-		
+		*/
 		// \n \t -- escape character
 		driver = new ChromeDriver();
 		

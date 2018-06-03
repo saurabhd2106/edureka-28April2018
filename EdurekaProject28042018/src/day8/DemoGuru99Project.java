@@ -6,7 +6,7 @@ public class DemoGuru99Project {
 		Guru99Project gg = new Guru99Project();
 		
 		try {
-			gg.invokeBrowser("firefox");
+			gg.invokeBrowser("phantom");
 			
 			gg.login("mngr129839", "dEqejen");
 			
