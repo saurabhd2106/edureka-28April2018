@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Guru99 Test case suite]" parallel="tests">
+  <test name="Edge Browser(failed)" parallel="tests">
+    <parameter name="password" value="aryjyde"/>
+    <parameter name="userId" value="mngr137077"/>
+    <parameter name="browserType" value="edge"/>
+    <classes>
+      <class name="day13.Guru99MultipleBrowserTesting">
+        <methods>
+          <include name="loginToGuru99" invocation-numbers="0"/>
+          <include name="invokeBrowser"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- day13.Guru99MultipleBrowserTesting -->
+    </classes>
+  </test> <!-- Edge Browser(failed) -->
+  <test name="Mozilla Browser(failed)" parallel="tests">
+    <parameter name="password" value="aryjyde"/>
+    <parameter name="userId" value="mngr137077"/>
+    <parameter name="browserType" value="firefox"/>
+    <classes>
+      <class name="day13.Guru99MultipleBrowserTesting">
+        <methods>
+          <include name="loginToGuru99" invocation-numbers="0"/>
+          <include name="invokeBrowser"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- day13.Guru99MultipleBrowserTesting -->
+    </classes>
+  </test> <!-- Mozilla Browser(failed) -->
+</suite> <!-- Failed suite [Guru99 Test case suite] -->

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Guru99 Test case suite" parallel="tests">
+	<test name="Test Run 1">
+		<parameter name="userId" value="mngr137077"></parameter>
+		<parameter name="password" value="aryjyde"></parameter>
+		<classes>
+			<class name="day13.Guru99Project" />
+		</classes>
+	</test> 
+	<test name="Test Run 2">
+		<parameter name="userId" value="mngr137077"></parameter>
+		<parameter name="password" value="aryjyde"></parameter>
+		<classes>
+			<class name="day13.Guru99Project" />
+		</classes>
+	</test>
+</suite> 

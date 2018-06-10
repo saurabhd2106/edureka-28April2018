@@ -7,8 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class Guru99Project {
 	
 	ChromeDriver driver;
-	String url ="http://www.demo.guru99.com/v4"
-			;
+	String url ="http://www.demo.guru99.com/v4";
 	public void invokeBrowser(){
 		
 		System.setProperty("webdriver.chrome.driver",

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="90" started-at="2018-06-10T05:13:00Z" finished-at="2018-06-10T05:13:00Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="90" started-at="2018-06-10T05:13:00Z" finished-at="2018-06-10T05:13:00Z">
+      <class name="day13.DataProviderExample">
+        <test-method status="PASS" signature="printTestData(java.lang.String, java.lang.String, int)[pri:0, instance:day13.DataProviderExample@7c0e2abd]" name="printTestData" duration-ms="17" started-at="2018-06-10T10:43:00Z" data-provider="getData" finished-at="2018-06-10T10:43:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[saurabh]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[QA001]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[83579834]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printTestData -->
+        <test-method status="PASS" signature="printTestData(java.lang.String, java.lang.String, int)[pri:0, instance:day13.DataProviderExample@7c0e2abd]" name="printTestData" duration-ms="5" started-at="2018-06-10T10:43:00Z" data-provider="getData" finished-at="2018-06-10T10:43:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Anurag]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[QA002]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[3483579]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printTestData -->
+        <test-method status="PASS" signature="printTestData(java.lang.String, java.lang.String, int)[pri:0, instance:day13.DataProviderExample@7c0e2abd]" name="printTestData" duration-ms="12" started-at="2018-06-10T10:43:00Z" data-provider="getData" finished-at="2018-06-10T10:43:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Akash]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[QA003]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[239834]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printTestData -->
+        <test-method status="PASS" signature="printTestData(java.lang.String, java.lang.String, int)[pri:0, instance:day13.DataProviderExample@7c0e2abd]" name="printTestData" duration-ms="5" started-at="2018-06-10T10:43:00Z" data-provider="getData" finished-at="2018-06-10T10:43:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chandan]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[QA004]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[79834]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printTestData -->
+      </class> <!-- day13.DataProviderExample -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

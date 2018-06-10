@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Learning Test suite">
+	<test name="Learning  Tests">
+		<classes>
+			<class name="day12.testng.TestNGTesting" />
+			<class name="day12.testng.ExpectedConditionsExample" />
+		</classes>
+	</test> <!-- Learning Tests -->
+</suite> <!-- Learning Test suite -->
