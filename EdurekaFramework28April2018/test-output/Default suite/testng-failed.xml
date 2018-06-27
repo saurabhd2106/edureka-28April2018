@@ -3,16 +3,16 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.mercuryTravel.testcases.MercuryTravelHomePagesTests">
+      <class name="com.Zopa.testcases.ZopaMemberSignUpTest">
         <methods>
-          <include name="verifyUserLoginWithCorrectCredentials"/>
-          <include name="initialization"/>
           <include name="invokeBrowser"/>
+          <include name="afterAMethod"/>
+          <include name="verifyUserSignUp" invocation-numbers="0 1 2 3 4 5 6 7"/>
+          <include name="initialization"/>
           <include name="cleanup"/>
           <include name="closeBrowser"/>
-          <include name="afterAMethod"/>
         </methods>
-      </class> <!-- com.mercuryTravel.testcases.MercuryTravelHomePagesTests -->
+      </class> <!-- com.Zopa.testcases.ZopaMemberSignUpTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
