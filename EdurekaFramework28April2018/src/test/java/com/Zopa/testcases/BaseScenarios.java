@@ -94,6 +94,8 @@ public class BaseScenarios {
 			homepage = new ZopaHomePage(driver);
 			loanpage = new ZopaLoanPage(driver);
 			memberSignuppage = new ZopaMemberSignUpPage(driver);
+			
+			
 
 		} catch (Exception e) {
 			logger.error("Exception occured :: " + e.getMessage());

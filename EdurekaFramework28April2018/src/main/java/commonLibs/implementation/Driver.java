@@ -39,7 +39,7 @@ public class Driver implements IDriver {
 		
 		if(browserType.equalsIgnoreCase("chrome")){
 			System.setProperty("webdriver.chrome.driver",
-					"C:\\Users\\sachdeva shilpa\\Downloads\\chromedriver_win32\\chromedriver.exe");
+					"C:\\Users\\Saurabh Dhingra\\workspace\\libs\\chromeDriver36\\chromedriver.exe");
 			
 			driver = new ChromeDriver();
 			

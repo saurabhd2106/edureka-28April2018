@@ -12,8 +12,13 @@ public class ZopaHomePage extends BasicOperations {
 	public ZopaHomePage(WebDriver driver) {
 		super(driver);
 		PageFactory.initElements(driver, this);
-	}
+		
+	
+			}
 
+	@FindBy(linkText="Hide this message")
+	private WebElement cookieLink;
+	
 	@FindBy(linkText = "Get a Zopa loan")
 	private WebElement getZopaLoanLink;
 
@@ -21,7 +26,7 @@ public class ZopaHomePage extends BasicOperations {
 	private WebElement investWithZopaLink;
 
 	public void clickGetZopaHomeLoan() throws Exception {
-
+		elementControl.click(cookieLink);
 		elementControl.click(getZopaLoanLink);
 
 	}
