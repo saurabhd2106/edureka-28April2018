@@ -1,20 +1,22 @@
-package com.mercuryTravel.testcases;
+package com.Zopa.testcases;
 
 import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.ITestResult;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.BeforeTest;
 
+import com.Zopa.pages.ZopaHomePage;
+import com.Zopa.pages.ZopaLoanPage;
+import com.Zopa.pages.ZopaMemberSignUpPage;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
-import com.mercuryTravel.pages.MercuryTravelHomePage;
 
 import commonLibs.implementation.Driver;
 import commonLibs.implementation.TakeScreenshot;
@@ -24,7 +26,9 @@ import commonLibs.utils.ReadConfigFileUtils;
 public class BaseScenarios {
 
 	public Driver cmnDriver;
-	public MercuryTravelHomePage homepage;
+	public ZopaHomePage homepage;
+	public ZopaLoanPage loanpage;
+	public ZopaMemberSignUpPage memberSignuppage;
 	public WebDriver driver;
 
 	public Properties configProperty;
@@ -64,7 +68,7 @@ public class BaseScenarios {
 		}
 	}
 
-	@BeforeClass
+	@BeforeTest
 	public void invokeBrowser() {
 
 		logger = report.createTest("Setup :: Invoke Browser");
@@ -87,7 +91,9 @@ public class BaseScenarios {
 			driver = cmnDriver.getDriver();
 			
 			camera = new TakeScreenshot(driver);
-			homepage = new MercuryTravelHomePage(driver);
+			homepage = new ZopaHomePage(driver);
+			loanpage = new ZopaLoanPage(driver);
+			memberSignuppage = new ZopaMemberSignUpPage(driver);
 
 		} catch (Exception e) {
 			logger.error("Exception occured :: " + e.getMessage());
@@ -121,7 +127,7 @@ public class BaseScenarios {
 
 	}
 
-	@AfterClass(enabled = true, alwaysRun = true)
+	@AfterTest(enabled = true, alwaysRun = true)
 	public void closeBrowser() {
 		try {
 
